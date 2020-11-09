@@ -5,6 +5,10 @@ vrep=remApi('remoteApi');
 [r,o]=vrep.simxGetObjectOrientation(clientID, target, -1, vrep.simx_opmode_blocking);
 
 
+disp(p);
+disp(p(1));
+disp(o);
+disp(o(1));
 
 for i=1:3
     if((abs(pos(i+3)-o(i))>pi)&&(o(i)<0))
